@@ -3,14 +3,24 @@
 
 使用本程序启动黑色沙漠steam美服可以免去手动替换汉化文件的麻烦。
 
+下载地址：
+https://github.com/nnn149/BlackDesertChinese/releases
+
+
+本程序放到啥地方都可以，不用放到游戏目录。
+
 重要：
+
 path.txt 里面改为自己的游戏路径。
 path.txt 里面改为自己的游戏路径。
 path.txt 里面改为自己的游戏路径。
 
 en     文件夹里面放最新的英文语言文件，游戏更新了自己替换新的进去。
+
 zh     文件夹里面放最新的中文语言文件，有新版汉化自己替换新的进去。
+
 font  文件夹里面放支持中文的字体文件，一般不用管。
+
 
 要运行游戏，直接打开  BlackDesertChinese.exe   即可。
 
