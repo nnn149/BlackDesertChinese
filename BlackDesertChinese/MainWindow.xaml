@@ -1,0 +1,23 @@
+﻿<Window x:Class="BlackDesertChinese.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackDesertChinese"
+        mc:Ignorable="d"
+        Title="黑色沙漠Steam版汉化启动器" Height="810" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="BtnStart" Click="BtnStart_Click">启动游戏</Button>
+            <Button Name="BtnUpdateLanguagedata" Click="BtnUpdateLanguagedata_Click">更新英文文件</Button>
+            <Button Name="BtnTW" Click="BtnTW_Click" >台服语言文件下载</Button>
+            <Button Name="BtnNew" Click="BtnNew_Click">新版下载</Button>
+
+        </StackPanel>
+        <TextBox Name="TxtNote" Grid.Row="1" IsReadOnly="True" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>
