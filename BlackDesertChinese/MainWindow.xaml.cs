@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -90,6 +91,7 @@ https://github.com/nnn149/BlackDesertChinese/releases  (项目地址)
                     Process[] processList = Process.GetProcessesByName("BlackDesertPatcher32.pae");
                     if (processList.Length < 1)
                     {
+                        AutoUpdateEnLanguagedata();
                         SetLanguagedata();
                         break;
                     }
@@ -199,7 +201,26 @@ https://github.com/nnn149/BlackDesertChinese/releases  (项目地址)
             File.Copy(enAimPath, enPath, true);
             MessageBox.Show("更新成功");
         }
+        private void AutoUpdateEnLanguagedata()
+        {
+            if (!IsSameFile(enPath, enAimPath))
+            {
+                log("发现新版英文语言文件，已自动更新");
+                File.Copy(enAimPath, enPath, true);
+            }
 
+        }
+
+        private bool IsSameFile(string path1, string path2)
+        {
+            using (HashAlgorithm hash = HashAlgorithm.Create())
+            {
+                using (FileStream file1 = new FileStream(path1, FileMode.Open), file2 = new FileStream(path2, FileMode.Open))
+                {
+                    return (BitConverter.ToString(hash.ComputeHash(file1)) == BitConverter.ToString(hash.ComputeHash(file2)));
+                }
+            }
+        }
         private void BtnNew_Click(object sender, RoutedEventArgs e)
         {
             Process.Start("https://github.com/nnn149/BlackDesertChinese/releases");
@@ -209,6 +230,7 @@ https://github.com/nnn149/BlackDesertChinese/releases  (项目地址)
         {
             MessageBox.Show(@"下载后文件名要重命名为 languagedata_en.loc，然后把 languagedata_en.loc 复制到 BlackDesertChinese\zh 目录即可");
             Process.Start("http://dn.blackdesert.com.tw/UploadData/ads/languagedata_tw.loc");
+            Process.Start("explorer.exe", @".\BlackDesertChinese\zh\");
         }
     }
 }

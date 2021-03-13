@@ -13,9 +13,9 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
             <Button Name="BtnStart" Click="BtnStart_Click">启动游戏</Button>
-            <Button Name="BtnUpdateLanguagedata" Click="BtnUpdateLanguagedata_Click">更新英文文件</Button>
+            <Button x:Name="BtnUpdateLanguagedata" Click="BtnUpdateLanguagedata_Click" Content="更新英文语言文件"/>
             <Button Name="BtnTW" Click="BtnTW_Click" >台服语言文件下载</Button>
-            <Button Name="BtnNew" Click="BtnNew_Click">新版下载</Button>
+            <Button x:Name="BtnNew" Click="BtnNew_Click" Content="新版汉化启动器下载"/>
 
         </StackPanel>
         <TextBox Name="TxtNote" Grid.Row="1" IsReadOnly="True" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
