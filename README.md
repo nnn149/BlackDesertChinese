@@ -24,4 +24,7 @@ qq群：529696365。群主会定时更新汉化文件，然后把 languagedata_e
 下载地址：
 https://github.com/nnn149/BlackDesertChinese/releases  
 
+蓝奏云下载：
+https://nnn149.lanzous.com/iaPV6mvlh8j
+
 ![avatar](1.png)
