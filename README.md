@@ -19,7 +19,7 @@ BlackDesertChinese\font   文件夹里面放支持中文的字体文件，一般
 
 dn.blackdesert.com.tw/UploadData/ads/languagedata_tw.loc（台服中文语言文件,下载后文件名要重命名为 languagedata_en.loc）
 
-qq群：529696365。群主会定时更新汉化文件，然后把 languagedata_en.loc 复制到 BlackDesertChinese\zh 目录即可。
+qq群：1083325318。群主会定时更新汉化文件，然后把 languagedata_en.loc 复制到 BlackDesertChinese\zh 目录即可。
 
 下载地址：
 https://github.com/nnn149/BlackDesertChinese/releases  
