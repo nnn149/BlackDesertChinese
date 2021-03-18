@@ -25,6 +25,7 @@ qq群：1083325318。群主会定时更新汉化文件，然后把 languagedata_
 https://github.com/nnn149/BlackDesertChinese/releases  
 
 蓝奏云下载：
-https://nnn149.lanzous.com/iaPV6mvlh8j
+https://nnn149.lanzous.com/b0dksb3wd
+密码:h6u2
 
 ![avatar](1.png)
